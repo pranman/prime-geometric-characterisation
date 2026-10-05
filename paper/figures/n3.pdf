@@ -1,0 +1,74 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 240 204 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (anonymous) /CreationDate (D:20000101000000+00'00') /Creator (scripts/make_figures.py) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (N=3 is prime: \(k=3, s=1\). All diagrams have the same length scale. Blue diagrams have unit steps; amber diagrams have non-unit steps. A digon is drawn as one segment with two opposite arrows on that segment: the route traverses the same segment twice, so its total length is 2s.) /Title (All regular-route representation types for N=3) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 814
+>>
+stream
+Gat%!9oIa[&A@C2b]+;^WCGc+o[&<#:eE1U^#]l3B/a&L]>T7uk`>1'QL,saZFcJlR`X$*o1$#P+Sh`/?$?9-'tjE35ROM3O?j!!=85l(oJU3VZ0haipc7,e5%h6cTY,kD"1pGjpk:s,$ODBn.N6+\N?u@g@upnDHtLGAd0h/&!BQoc9TrLj<jsQS5Z7f`cnKg<#,jtZ-q>/BAhJ_67EQ8hVDQk\4&&me1Imn_]S&$LK+`*lL/D['ZMI[+/agR%>+gh/-ifESL3ZTU`J0PngcB'!WHH@Y/$7hoPqJt,%7/O\eMh^`)W2^QpVX^\<`%U>[Ebo*dY=CpFceAt9,hLMV?pCWSs(:`-+NEgj.R?ZrjY,Z+*opGI68/em?P(1`&c<I\tkhi7.[!XjSe(jJC1sd1lkLrp#D'rA$Ni46YZ]D:DKK;LFNK;/W^I?iRk\Re.S;pVbs&tc3`W0Nn"Df;O.t;I6rnh-/d%SJTo&)!j"c(&<s-_VZgQsTacBE:=^*,,#A?\0,;]]Z,2@Vgd*N803JcC/XX-!bmCO@8a]s47F=N1#r4EL"C+idV</ZR6S^MTPcuS*MNZm9I6-!gJ`=qF'hXQ%jq;:A=Q@VEk2@&P%:,>RM5b#+02:W)[$]G4d^1oFVG"Fd/r?RgKjaJ9'c,7k#nru]3&-qM(eqba/at&2o/g`ZG[mR>^'XUQ9J>eqlM!.ERh]9@Rk&mrZrt*%Q$qcM5S7LFi5[A3B>6[JE,6SN\(s53.nG')Mb5SmTQM%Fd'iFZ^V)dH])dYu/cR[joF80%Is\h\U#*3eSk+M/&)a]phZ~>endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000582 00000 n 
+0000001164 00000 n 
+0000001223 00000 n 
+trailer
+<<
+/ID 
+[<e11f7876e378c8530c05f99399179eb5><e11f7876e378c8530c05f99399179eb5>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+2127
+%%EOF

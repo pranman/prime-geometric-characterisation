@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="765" height="272" viewBox="0 0 765 272" role="img" aria-labelledby="title description">
+  <title id="title">All regular-route representation types for N=6</title>
+  <desc id="description">N=6 is composite: (k=2, s=3), (k=3, s=2), (k=6, s=1). All diagrams have the same length scale. Blue diagrams have unit steps; amber diagrams have non-unit steps. A digon is drawn as one segment with two opposite arrows on that segment: the route traverses the same segment twice, so its total length is 2s.</desc>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="1" y="1" width="763" height="213" rx="10" fill="#ffffff" stroke="#d5dfe8"/>
+    <text x="19" y="31" font-size="23" font-weight="bold" text-anchor="start" fill="#182d43">N = 6  |  Composite</text>
+    <text x="19" y="56" font-size="18" font-weight="normal" text-anchor="start" fill="#4e6072">3 representation types</text>
+    <line x1="62.1667" y1="113" x2="194.1667" y2="113" stroke="#966006" stroke-width="3" stroke-linecap="round"/>
+    <polyline points="110.4067,109 104.4067,113 110.4067,117" fill="none" stroke="#966006" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <polyline points="145.9267,109 151.9267,113 145.9267,117" fill="none" stroke="#966006" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="62.1667" cy="113" r="3.3" fill="#966006"/>
+    <circle cx="194.1667" cy="113" r="3.3" fill="#966006"/>
+    <text x="128.1667" y="178" font-size="20" font-weight="normal" text-anchor="middle" fill="#182d43">(k, s) = (2, 3)</text>
+    <text x="128.1667" y="201" font-size="18" font-weight="normal" text-anchor="middle" fill="#966006">Non-unit steps</text>
+    <polygon points="382.5,62.1932 426.5,138.4034 338.5,138.4034" fill="#fff5e5" stroke="#966006" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="382.5" cy="62.1932" r="3.3" fill="#966006"/>
+    <circle cx="426.5" cy="138.4034" r="3.3" fill="#966006"/>
+    <circle cx="338.5" cy="138.4034" r="3.3" fill="#966006"/>
+    <text x="382.5" y="178" font-size="20" font-weight="normal" text-anchor="middle" fill="#182d43">(k, s) = (3, 2)</text>
+    <text x="382.5" y="201" font-size="18" font-weight="normal" text-anchor="middle" fill="#966006">Non-unit steps</text>
+    <polygon points="636.8333,69 674.9385,91 674.9385,135 636.8333,157 598.7282,135 598.7282,91" fill="#edf4fd" stroke="#235da8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="636.8333" cy="69" r="3.3" fill="#235da8"/>
+    <circle cx="674.9385" cy="91" r="3.3" fill="#235da8"/>
+    <circle cx="674.9385" cy="135" r="3.3" fill="#235da8"/>
+    <circle cx="636.8333" cy="157" r="3.3" fill="#235da8"/>
+    <circle cx="598.7282" cy="135" r="3.3" fill="#235da8"/>
+    <circle cx="598.7282" cy="91" r="3.3" fill="#235da8"/>
+    <text x="636.8333" y="178" font-size="20" font-weight="normal" text-anchor="middle" fill="#182d43">(k, s) = (6, 1)</text>
+    <text x="636.8333" y="201" font-size="18" font-weight="normal" text-anchor="middle" fill="#235da8">Unit steps</text>
+    <text x="382.5" y="239" font-size="17" font-weight="normal" text-anchor="middle" fill="#4e6072">All diagrams share one length scale.</text>
+    <text x="382.5" y="262" font-size="17" font-weight="normal" text-anchor="middle" fill="#4e6072">Digon: one segment, two traversals.</text>
+  </g>
+</svg>

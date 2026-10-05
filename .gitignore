@@ -1,0 +1,20 @@
+# LaTeX build intermediates; final paper and vector PDFs are tracked.
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.dvi
+
+# Local environments and scratch files.
+__pycache__/
+*.py[cod]
+.venv/
+work/
+.DS_Store
+Thumbs.db

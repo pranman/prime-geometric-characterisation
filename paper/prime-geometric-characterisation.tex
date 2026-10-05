@@ -1,0 +1,238 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,booktabs}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={A Geometric Characterisation of Prime Numbers Using Regular Polygons and Digons},pdfauthor={Pranay Manocha},pdfsubject={An expository geometric reformulation of elementary divisibility},pdfkeywords={prime numbers, regular polygons, digons, divisibility, divisor-counting function}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\title{A Geometric Characterisation of Prime Numbers\\Using Regular Polygons and Digons}
+\author{Pranay Manocha\\[3pt]\small Independent researcher}
+\date{5 October 2026\\[3pt]\small Expository note}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Fix a unit of length. We represent a positive integer $N$ by a regular
+closed route with $k\ge2$ equal steps of integer length $s\ge1$, so that
+$N=ks$. Ordinary regular convex polygons are supplemented by the
+degenerate digon: a segment traversed out and back. For $N\ge2$, primality
+is equivalent to every admissible route having unit step length. The
+number of representation types is $R(N)=\tau(N)-1$, where $\tau$ counts
+positive divisors. Thus $1$, primes and composites have respectively
+zero, one and multiple types. This is an expository reformulation of
+elementary divisibility, using at most two spatial dimensions.
+\end{abstract}
+
+\section{Motivation}
+This construction arose from an attempt to develop a geometric language
+for prime numbers as a preliminary step towards investigating additive
+questions such as Goldbach's conjecture; no result concerning Goldbach's
+conjecture is claimed here. Encoding factorisation geometrically does not
+by itself resolve an additive question. The present purpose is to state
+the correspondence precisely and treat the small integers uniformly.
+
+\section{Definitions}
+We work throughout with \emph{positive integers}, and fix a unit of length.
+A prime is an integer greater than $1$ whose only positive divisors are
+$1$ and itself. A composite is an integer greater than $1$ that is not
+prime; $1$ is neither prime nor composite.
+
+\begin{definition}
+An \emph{admissible regular closed route} of total length $N$ has $k$ equal
+straight steps of length $s$, where $k\ge2$ and $s\ge1$ are integers.
+For $k\ge3$ it traverses the boundary of a regular convex $k$-gon once.
+For $k=2$ it traverses a segment of length $s$ and retraces it to the
+starting point; we call this a \emph{degenerate digon}. Its total
+travelled length is $N=ks$.
+\end{definition}
+
+The digon is a convention for a closed route, not an ordinary
+non-degenerate Euclidean polygon. Its two traversals coincide: the
+geometric segment has length $s$, the travelled distance is $2s$, and
+the final displacement is zero. No integer-coordinate condition is imposed.
+A \emph{representation type} is determined solely by $(k,s)$.
+Position, orientation, starting vertex and direction of traversal do not
+create new types; in particular, rotations, translations and reflections
+are not counted again. Star polygons and repeated circuits are excluded.
+
+\newpage
+\section{Geometric characterisation of primality}
+Every pair of integers $k\ge2$, $s\ge1$ is realisable: for $k\ge3$,
+inscribe a regular $k$-gon in a circle of radius
+$s/(2\sin(\pi/k))$; for $k=2$, use the out-and-back route.
+In particular, every $N\ge2$ has the unit-step type $(N,1)$.
+
+\begin{theorem}\label{thm:prime}
+For every integer $N\ge2$, $N$ is prime if and only if every admissible
+regular closed route of total length $N$ has unit step length.
+Equivalently, no such route has integer step length $s>1$.
+\end{theorem}
+\begin{proof}
+If an admissible route has $s>1$, then $N=ks$ with $k,s\ge2$,
+so $N$ is composite. Conversely, if $N$ is composite, write $N=ab$
+with $a,b\ge2$. Choose $k=a$ and $s=b$. When $a=2$, use the digon;
+when $a\ge3$, use a regular convex $a$-gon of side length $b$.
+This is an admissible route with non-unit integer step length.
+These two implications prove the equivalence. If $N$ is prime,
+$k\mid N$ and $k\ge2$ force $k=N$, and hence $s=1$; its unique
+representation type is $(N,1)$.
+\end{proof}
+
+The assumption $N\ge2$ is essential: $1$ admits no route, so the
+universal unit-step condition would hold vacuously at $1$.
+
+\section{The exceptional role of the digon}
+If only ordinary polygons ($k\ge3$) were allowed, the same criterion
+would work for $N\ge5$. Indeed, a composite $N\ge5$ has a factorisation
+$N=ab$ with $a\ge b\ge2$ and $a\ge3$: otherwise $a=b=2$ and $N=4$.
+At $4$, however, the only ordinary-polygon type is the unit square
+$(4,1)$; the missing non-unit witness is $(2,2)$. Admitting the digon
+provides this witness and also gives the prime $2$ its unit route $(2,1)$.
+Thus $2=2\cdot1$ and $4=2\cdot2$ fit the same convention.
+
+\paragraph{Equal turns.}
+Each route can be followed using the same oriented exterior turn
+$360^\circ/k$ after each edge, including at the closing vertex.
+For $k=2$ the $180^\circ$ turn reverses direction along the segment;
+for $k=3$ the $120^\circ$ turn produces an equilateral triangle.
+This unifies the construction geometrically without enlarging the
+admissible family to other turning angles or star polygons.
+
+\section{Representation count and classification}
+For a positive integer $N$, define
+\[
+ R(N)=\#\{(k,s)\in\mathbb Z^2:k\ge2,\ s\ge1,\ ks=N\}.
+\]
+Let $\tau(N)$ be the number of positive divisors of $N$ (also denoted
+$d(N)$ in standard references~\cite{apostolDLMF27}).
+\begin{proposition}\label{prop:count}
+For every positive integer $N$, $R(N)=\tau(N)-1$.
+\end{proposition}
+\begin{proof}
+Every divisor $k\mid N$ with $k\ge2$ gives exactly one type
+$(k,N/k)$, and every type arises in this way. Of the $\tau(N)$
+positive divisors, only $k=1$ is excluded.
+\end{proof}
+\begin{corollary}\label{cor:classification}
+For positive integers $N$,
+\[
+ N=1\iff R(N)=0,\qquad
+ N\text{ prime}\iff R(N)=1,\qquad
+ N\text{ composite}\iff R(N)\ge2.
+\]
+\end{corollary}
+\begin{proof}
+The integer $1$ has no type. Every $N\ge2$ has exactly one unit-step
+type, $(N,1)$; Theorem~\ref{thm:prime} shows that an additional type
+exists exactly when $N$ is composite.
+\end{proof}
+
+\newpage
+\section{Examples}
+Table~\ref{tab:examples} lists all types for $1\le N\le12$.
+The two factors have different roles, so, for example, $(3,4)$ and
+$(4,3)$ are distinct types. Figure~\ref{fig:routes} makes the distinction
+visible for $2\le N\le6$.
+
+\begin{table}[!ht]
+\centering
+\caption{All representation types for the first twelve positive integers.}
+\label{tab:examples}
+\medskip
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}rll@{}}
+\toprule
+$N$ & Representation types $(k,s)$ & Classification\\
+\midrule
+% BEGIN REPRESENTATION TABLE
+1 & none & unit\\
+2 & $(2,1)$ & prime\\
+3 & $(3,1)$ & prime\\
+4 & $(2,2),(4,1)$ & composite\\
+5 & $(5,1)$ & prime\\
+6 & $(2,3),(3,2),(6,1)$ & composite\\
+7 & $(7,1)$ & prime\\
+8 & $(2,4),(4,2),(8,1)$ & composite\\
+9 & $(3,3),(9,1)$ & composite\\
+10 & $(2,5),(5,2),(10,1)$ & composite\\
+11 & $(11,1)$ & prime\\
+12 & $(2,6),(3,4),(4,3),(6,2),(12,1)$ & composite\\
+% END REPRESENTATION TABLE
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{paper/figures/overview.pdf}
+\caption{All types for $N=2,3,4,5,6$, at a common length scale.
+Blue routes have $s=1$; amber routes have $s>1$, also indicated by
+the labels. The digon's opposing arrows lie on a single segment,
+which is traversed twice. Primes have one type; composites have more.}
+\label{fig:routes}
+\end{figure}
+
+\newpage
+\section{Dimensional scope}
+The digon lies in one dimension, while ordinary regular polygons lie
+in a plane. The construction therefore requires at most two spatial
+dimensions. Every planar route embeds unchanged in $\mathbb R^n$ for
+$n\ge2$, so the result imposes no upper bound on mathematical or
+physical dimensions. Higher-dimensional extensions are left for
+separate investigation; this note establishes only the planar case.
+
+\section{Relation to existing geometric descriptions of primality}
+Geometric descriptions of factorisation and primality already exist.
+Rectangular arrays represent products by rows and columns; Way's
+educational treatment explicitly connects their shapes with factors
+and prime numbers~\cite{way2011arrays}. Polygonal and star-polygon
+constructions also express divisibility and coprimality: Erfle describes
+how a fixed jump among cyclically arranged vertices relates to whether
+a star is traced in one circuit~\cite{erfleCoprime}.
+Those constructions provide context; star polygons are not routes
+admitted by our definition.
+
+This note records an independently developed geometric reformulation
+of elementary divisibility. The correspondence between geometric
+representation and factorisation is not claimed to be a new result in
+number theory. The purpose is to formulate the total-length construction
+explicitly, remove the exception caused by ordinary polygon terminology
+by admitting the degenerate digon, and derive a uniform representation
+count. Historical priority for this exact formulation is not claimed;
+whether this precise presentation has appeared before has not been
+established. The references are contextual, not an exhaustive literature
+or priority investigation.
+
+\section{Conclusion}
+Factorisation appears as alternative regular closed routes with equal
+integer step lengths. Primes have one representation type, composites
+have multiple types, and the total number is $\tau(N)-1$. The digon
+makes the primality criterion uniform from $2$ upwards, while $1$ is
+distinguished by having no representation. The result is a geometric
+description of the prime/composite distinction, with its arithmetic
+content made explicit.
+
+\section*{Source and licence}
+The source, vector diagrams and finite arithmetic checks are available
+at \href{https://github.com/pranman/prime-geometric-characterisation}{the accompanying repository}.
+The checks guard against transcription errors; the proofs above establish
+the general results. Copyright \textcopyright\ 2026 Pranay Manocha.
+The note and artwork are licensed under
+\href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International}.
+
+\begingroup
+\small
+\raggedright
+\bibliographystyle{plain}
+\bibliography{references}
+\endgroup
+\end{document}

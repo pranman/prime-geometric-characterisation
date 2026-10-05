@@ -1,0 +1,3 @@
+# SVG generation has no third-party dependencies.
+# ReportLab creates the matching vector PDF figures.
+reportlab==4.4.9
