@@ -30,7 +30,7 @@ EXPECTED_TYPES = {
 }
 
 EXPECTED_CLASSES = {
-    1: "unit", 2: "prime", 3: "prime", 4: "composite",
+    1: "neither prime nor composite", 2: "prime", 3: "prime", 4: "composite",
     5: "prime", 6: "composite", 7: "prime", 8: "composite",
     9: "composite", 10: "composite", 11: "prime", 12: "composite",
 }
@@ -75,7 +75,7 @@ def check_arithmetic(limit: int) -> None:
         prime = is_prime(n)
         count = len(routes)
         require(count == divisor_count(n) - 1, f"Divisor count failed at N={n}")
-        require((count == 0) == (n == 1), f"Unit classification failed at N={n}")
+        require((count == 0) == (n == 1), f"N=1 classification failed at N={n}")
         require((count == 1) == prime, f"Prime classification failed at N={n}")
         require((count >= 2) == (n >= 2 and not prime),
                 f"Composite classification failed at N={n}")
@@ -91,7 +91,8 @@ def check_arithmetic(limit: int) -> None:
                 polygon_only_exceptions.append(n)
         if n in EXPECTED_TYPES:
             require(routes == EXPECTED_TYPES[n], f"Example types failed at N={n}")
-            classification = "unit" if n == 1 else "prime" if prime else "composite"
+            classification = ("neither prime nor composite" if n == 1
+                              else "prime" if prime else "composite")
             require(classification == EXPECTED_CLASSES[n],
                     f"Example classification failed at N={n}")
 
@@ -137,9 +138,10 @@ def check_paper_table(paper: Path) -> None:
         n_text, types_cell, class_cell = match.groups()
         n = int(n_text)
         require(n not in rows, f"Duplicate example row for N={n}")
-        classes = re.findall(r"\b(unit|prime|composite)\b", class_cell.lower())
-        require(len(classes) == 1, f"Invalid classification cell at N={n}: {class_cell!r}")
-        rows[n] = (parse_types(types_cell), classes[0])
+        classification = " ".join(class_cell.lower().split())
+        require(classification in EXPECTED_CLASSES.values(),
+                f"Invalid classification cell at N={n}: {class_cell!r}")
+        rows[n] = (parse_types(types_cell), classification)
     expected = {n: (routes, EXPECTED_CLASSES[n]) for n, routes in EXPECTED_TYPES.items()}
     require(rows == expected, f"LaTeX example table differs from verified examples: {rows!r}")
 

@@ -6,7 +6,7 @@ authors:
   - family-names: Manocha
     given-names: Pranay
 date-released: 2026-10-05
-version: 1.0.0
+version: 1.0.1
 url: "https://github.com/pranman/prime-geometric-characterisation"
 license: CC-BY-4.0
 abstract: "An expository geometric reformulation of elementary divisibility using regular polygons and degenerate digons, with representation count R(N)=tau(N)-1."
